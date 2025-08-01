@@ -19,8 +19,8 @@
                     </a>
                 </li>
                 <li>
-                    <a [routerLink]="['/about']">
-                        {{translationConcat('ABOUT') | translate}}
+                    <a [routerLink]="['/papers']" [class]="{'active': router.url === 'papers'}">
+                        {{translationConcat('PAPERS') | translate}}
                     </a>
                 </li>
             </ul>
