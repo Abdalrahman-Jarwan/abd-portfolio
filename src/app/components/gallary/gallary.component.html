@@ -1,0 +1,27 @@
+@if(showGallary){
+<div class="gallary">
+  <div class="content">
+    @if(showButtons){
+    <button class="btn text-light" (click)="decreaseIndex()">
+      <h3 class="d-inline">
+        <i class="bi bi-chevron-left"></i>
+      </h3>
+    </button>
+    }
+    @if(!currentMediaUrl?.includes('www.youtube.com')){
+    <img [src]="currentMediaUrl">
+    }@else{
+    <clp-youtube-embed [url]="currentMediaUrl"></clp-youtube-embed>
+    }
+
+    <button class="btn text-light" (click)="increaseIndex()">
+      <h3 class="d-inline">
+        <i class="bi bi-chevron-right"></i>
+      </h3>
+    </button>
+  </div>
+  @if(showButtons){
+  <a role="button" class="overlay" (click)="dismissGallary()"></a>
+  }
+</div>
+}

@@ -1,0 +1,67 @@
+<nav class="p-4">
+    <div class="row m-0 justify-content-between">
+        <div class="col-6">
+            <a [routerLink]="['/home']">
+                {{translationConcat('LOGO') | translate}}
+            </a>
+        </div>
+
+        <div class="col-6 d-flex justify-content-end">
+            <ul>
+                <li>
+                    <a [routerLink]="['/home']">
+                        {{translationConcat('HOME') | translate}}
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/projects']">
+                        {{translationConcat('PROJECTS') | translate}}
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/about']">
+                        {{translationConcat('ABOUT') | translate}}
+                    </a>
+                </li>
+                <li>
+                    <a role="button" (click)="languageToggle()">
+                        {{translateService.currentLang === 'en' ? '中' : 'En'}}
+                    </a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <clp-theme-picker></clp-theme-picker>
+                </li>
+            </ul>
+
+            <clp-burger-menu [(toggled)]="mobileMenuToggled" />
+        </div>
+    </div>
+</nav>
+
+<div class="menu" [ngClass]="{'toggled':mobileMenuToggled}">
+    <ul>
+        <li>
+            <a [routerLink]="['/home']" (click)="mobileMenuToggled = false">
+                {{translationConcat('HOME') | translate}}
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/projects']" (click)="mobileMenuToggled = false">
+                {{translationConcat('PROJECTS') | translate}}
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/about']" (click)="mobileMenuToggled = false">
+                {{translationConcat('ABOUT') | translate}}
+            </a>
+        </li>
+        <li>
+            <a role="button" (click)="languageToggle()">
+                {{translateService.currentLang === 'en' ? '中' : 'En'}}
+            </a>
+        </li>
+        <li>
+            <clp-theme-picker></clp-theme-picker>
+        </li>
+    </ul>
+</div>

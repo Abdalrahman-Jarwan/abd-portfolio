@@ -1,0 +1,30 @@
+footer {
+    background-color: var(--custom-secondary-bg);
+    color: var(--bs-body-color);
+    height: 112px;
+
+    .social {
+        display: flex;
+        height: 52px;
+        width: 52px;
+
+        fill: var(--bs-body-color) !important;
+        stroke: var(--bs-body-color) !important;
+
+        * {
+            stroke: var(--bs-body-color) !important;
+        }
+    }
+}
+
+
+//add a media quyery for the socials
+
+@media (max-width: 768px) {
+    footer {
+        .social {
+            height: 32px;
+            width: 32px;
+        }
+    }
+}

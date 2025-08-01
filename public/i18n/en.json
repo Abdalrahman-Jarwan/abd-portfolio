@@ -1,0 +1,41 @@
+{
+  "NAV": {
+    "LOGO": "C.Lin",
+    "HOME": "Home",
+    "PROJECTS": "Projects",
+    "ABOUT": "About"
+  },
+  "FOOTER": {
+    "CONTACT_ME": "Contact Me"
+  },
+  "PROJECT_FILTERS": {
+    "ALL": "All",
+    "MOTION_GRAPHICS": "Motion Graphics",
+    "TWO_DIMENSINAL_ANIMATION": "2d Animations",
+    "THREE_DIMENSINAL_ANIMATION": "3d Modeling",
+    "VIDEO_PRODUCTION": "Video Production",
+    "CLIENT_WORK": "Client Work"
+  },
+  "PROJECT": {
+    "PROJECT_MEMBERS": "Project Members",
+    "STYLEFRAME": "Styleframe",
+    "PROCESS": "Process",
+    "PROJECT_BREADCRUMBS_PROJECTS": "Projects"
+  },
+  "ABOUT": {
+    "INTRODUCTION": {
+      "TITLE": "Hi World!",
+      "DESCRIPTION": "I am currently pursuing my MA in Animation at DePaul University, specializing in motion graphics, and I am on track to graduate in June 2025. My journey in motion graphics began in 2021, and it has been a passion of mine ever since. I primarily work with After Effects, Illustrator, and Cinema 4D, creating dynamic and visually compelling designs that tell stories and engage audiences. Additionally, I’ve been crafting 2D hand-drawn animations since 2020, which has allowed me to explore a more traditional approach to animation. So far, I’ve created three short films that reflect my love for storytelling and artistic expression."
+    },
+    "SKILLS": {
+      "TITLE": "Skills"
+    },
+    "TECHNOLOGIES": {
+      "TITLE": "Technologies"
+    },
+    "ME_FIGURE": {
+      "TITLE": "Chiawei Lin ",
+      "SUBTEXT": "This is"
+    }
+  }
+}

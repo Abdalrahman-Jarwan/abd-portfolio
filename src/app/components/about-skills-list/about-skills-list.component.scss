@@ -1,0 +1,41 @@
+.skills-list {
+  position: relative;
+  display: flex;
+
+  .icon {
+    height: 44px;
+
+    img {
+      aspect-ratio: 1/1;
+      height: 100%;
+    }
+  }
+
+  .list {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 0;
+      }
+    }
+  }
+
+  .spark-figure {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    transform: translateY(20px);
+    aspect-ratio: 146/138;
+    height: 120px;
+    z-index:-1;
+    pointer-events:none;
+    opacity:.5;
+    @media(min-width:991px){
+    opacity:1;
+    }
+
+  }
+}

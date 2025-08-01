@@ -1,0 +1,26 @@
+a {
+  text-decoration: none;
+  font-size: 16px;
+
+  &.selected {
+    cursor: default;
+    color: var(--custom-primary);
+  }
+
+  &:not(.selected) {
+    opacity: .6;
+    color: var(--bs-body-color);
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+//add a media for fontsize
+@media (max-width: 768px) {
+  a {
+    font-size: 10px;
+  }
+}

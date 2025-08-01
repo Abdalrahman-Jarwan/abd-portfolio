@@ -1,0 +1,41 @@
+{
+  "NAV": {
+    "LOGO": "C.Lin",
+    "HOME": "首頁",
+    "PROJECTS": "專案",
+    "ABOUT": "關於"
+  },
+  "FOOTER": {
+    "CONTACT_ME": "聯絡我"
+  },
+  "PROJECT_FILTERS": {
+    "ALL": "全部",
+    "MOTION_GRAPHICS": "動態影像設計",
+    "TWO_DIMENSINAL_ANIMATION": "2D動畫",
+    "THREE_DIMENSINAL_ANIMATION": "3D建模",
+    "VIDEO_PRODUCTION": "影片製作",
+    "CLIENT_WORK": "商業合作"
+  },
+  "PROJECT": {
+    "PROJECT_MEMBERS": "專案成員",
+    "STYLEFRAME": "風格畫面",
+    "PROCESS": "製作過程",
+    "PROJECT_BREADCRUMBS_PROJECTS": "專案"
+  },
+  "ABOUT": {
+    "INTRODUCTION": {
+      "TITLE": "世界你好！",
+      "DESCRIPTION": "我目前正在帝博大學（DePaul University）攻讀動畫碩士（MA），專攻動態圖形設計，預計於 2025 年 6 月畢業。我的動態影像設計之旅始於 2021 年，從那時起，它便成為我熱愛的領域。我主要使用 After Effects、Illustrator 和 Cinema 4D，創作充滿動感且具視覺吸引力的設計，以講述故事並吸引觀眾。此外，自 2020 年以來，我也一直從事 2D 手繪動畫的創作，這讓我能夠探索更傳統的動畫表現方式。至今，我已完成三部短片，這些作品展現了我對故事敘述與藝術表達的熱愛。"
+    },
+    "SKILLS": {
+      "TITLE": "技能"
+    },
+    "TECHNOLOGIES": {
+      "TITLE": "軟體"
+    },
+    "ME_FIGURE": {
+      "TITLE": "林家葳",
+      "SUBTEXT": "這是"
+    }
+  }
+}

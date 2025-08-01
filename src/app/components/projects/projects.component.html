@@ -1,0 +1,13 @@
+<div class="row m-0 my-2 my-md-5">
+    <div class="col">
+        <clp-project-filters [(projects)]="projects"></clp-project-filters>
+    </div>
+</div>
+
+<div class="row m-0">
+    @for(project of this.projects; track project.id){
+    <div class="col-lg-4 col-12 my-3">
+        <clp-project-card [project]="project"></clp-project-card>
+    </div>
+    }
+</div>

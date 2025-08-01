@@ -1,0 +1,107 @@
+<div class="project">
+  <section class="my-4">
+    <clp-project-breadcrumb [project]="project"></clp-project-breadcrumb>
+  </section>
+  <section>
+    <div class="row m-0">
+      <div class="col">
+        <div class="img-container mb-4" [ngClass]="{'img-container-aspected': project?.mainMediaType !== 'instagram'}">
+          @switch(project?.mainMediaType){
+          @case ('image'){
+          <img [src]="project?.mainMedia" alt="">
+          }
+          @case ('youtube') {
+          <clp-youtube-embed [url]="project?.mainMedia"></clp-youtube-embed>
+          }
+
+          @case ('instagram') {
+          <clp-instagram-embed [url]="project?.mainMedia"></clp-instagram-embed>
+          }
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="row m-0 flex-column">
+      <div class="col">
+        <h2 class="my-1 title">
+          {{project?.title?.[translateService.currentLang]}}
+        </h2>
+      </div>
+
+      <div class="col">
+        <p class="my-1" [innerHTML]="project?.shortDescription?.[translateService.currentLang]"></p>
+
+        <small class="d-block my-2" [innerHTML]="project?.longDescription?.[translateService.currentLang]"></small>
+
+        @if(project?.projectMembers){
+        <small class="d-block my-2">
+          {{translationConcat('PROJECT_MEMBERS') | translate}}:
+          {{project?.projectMembers?.[translateService.currentLang]}}
+        </small>
+        }
+      </div>
+    </div>
+  </section>
+
+  @if(project?.styleframeImages?.length! > 0){
+  <section>
+    <div class="row m-0">
+      <div class="col">
+        <h2 class="title">
+          {{translationConcat('STYLEFRAME') | translate}}
+        </h2>
+      </div>
+    </div>
+    <div class="row m-0">
+      @for(styleframeImg of project?.styleframeImages; track styleframeImg; let index = $index){
+      @if(!styleframeImg.includes('www.youtube.com')){
+      <div class="col-lg-6 col-12 my-3">
+        <a role="button" class="img-card" (click)="showStyleframeImages(index)">
+          <img [src]="styleframeImg" alt="">
+        </a>
+      </div>
+      }
+      }
+    </div>
+  </section>
+  }
+
+  @if(project?.processImages?.length! > 0){
+  <section>
+    <div class="row m-0">
+      <div class="col">
+        <h2 class="title">
+          {{translationConcat('PROCESS') | translate}}
+        </h2>
+      </div>
+    </div>
+    <div class="row m-0">
+      @for(processImage of project?.processImages;track processImage; let index = $index){
+      <div class="col-lg-6 col-12 my-3">
+        <a role="button" class="img-card" (click)="showProcessImages(index)">
+          @if(!processImage.includes('www.youtube.com')){
+          <img [src]="processImage" alt="">
+          } @else {
+          <clp-youtube-embed [url]="processImage"></clp-youtube-embed>
+          }
+        </a>
+
+      </div>
+
+      }
+    </div>
+  </section>
+  }
+  <section>
+    <div class="row m-0">
+      <div class="col">
+        <small class="d-block my-2" [innerHTML]="project?.processDescription?.[translateService.currentLang]"></small>
+      </div>
+    </div>
+  </section>
+</div>
+
+<clp-gallary [urls]="gallaryUrls" [(showGallary)]="showGallary" [(index)]="currentGallaryIndex!"></clp-gallary>

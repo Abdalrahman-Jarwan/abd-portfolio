@@ -1,0 +1,6 @@
+<a role="button" class="theme-picker"
+    [ngClass]="{'lightmode' : themeService.currentMode == 'darkmode', 'darkmode': themeService.currentMode == 'lightmode'}"
+    (click)="themeToggle()">
+    <i class="bi bi-sun"></i>
+    <i class="bi bi-moon-stars"></i>
+</a>

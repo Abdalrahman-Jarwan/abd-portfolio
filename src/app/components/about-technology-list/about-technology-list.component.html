@@ -1,0 +1,21 @@
+<div class="skills-list">
+  <div class="icon">
+    <img src="images/about/drawn-star-2.png" alt="drawn-star">
+  </div>
+  <div class="list">
+    <h2>
+      <strong>
+        {{translationConcat('TITLE') | translate}}
+      </strong>
+    </h2>
+    <ul>
+      @for(technology of technologies; track technology.id){
+      <li>
+        {{technology.name[translateService.currentLang]}}
+      </li>
+      }
+    </ul>
+  </div>
+
+  <img src="images/about/exclamation.png" class="exclamation-figure" alt="exclamation-figure" />
+</div>

@@ -1,0 +1,15 @@
+body.darkmode {
+    --bs-body-bg: #24273a !important;
+    --bs-body-color: #cad3f5 !important;
+    --custom-primary: #8caaee !important;
+    --custom-secondary-color: #b8c0e0 !important;
+    --custom-secondary-bg: #181926 !important;
+}
+
+body.lightmode {
+    --bs-body-bg: #EEEBDC !important;
+    --bs-body-color: black !important;
+    --custom-primary-color: black !important;
+    --custom-secondary-color: #DCD7C1 !important;
+    --custom-secondary-bg: #DCD7C1 !important;
+}
