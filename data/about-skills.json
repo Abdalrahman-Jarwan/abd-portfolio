@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "name": {
+      "en": "Language: Mandarin (Native), English (Proficient)",
+      "zh": "語言：中文（母語），英語（熟練）"
+    }
+  },
+  {
+    "id": 1,
+    "name": {
+      "en": "2D/3D Motion Graphics and Animation",
+      "zh": "2D/3D 動態圖形和動畫"
+    }
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "2D Hand-drawn animation",
+      "zh": "2D 手繪動畫"
+    }
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Video Post-Production",
+      "zh": "視頻後期製作"
+    }
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Graphic design",
+      "zh": "平面設計"
+    }
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Team Collaboration",
+      "zh": "團隊合作"
+    }
+  }
+]
