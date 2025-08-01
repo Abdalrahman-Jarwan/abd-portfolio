@@ -23,7 +23,7 @@ export class ThemeService {
   }
 
   get currentMode () {
-    return this.document.body.classList.contains('darkmode') ? 'darkmode' : 'lightmode';
+    return Array.from(this.document.body.classList).find((cls)=> cls === 'darkmode' || cls === 'lightmode');
   }
 
   get defaultBrowserMode () {

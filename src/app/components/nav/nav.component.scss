@@ -9,6 +9,7 @@ nav {
         &:hover {
             opacity: 1;
         }
+
     }
 
     ul {
@@ -56,6 +57,10 @@ nav {
     }
 }
 
+a.active {
+    opacity: 1 !important;
+    color: var(--bs-light) !important;
+}
 
 @media (min-width: 992px) {
 

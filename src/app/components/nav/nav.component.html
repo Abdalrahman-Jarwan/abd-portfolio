@@ -1,20 +1,20 @@
 <nav class="p-4">
     <div class="row m-0 justify-content-between">
-        <div class="col-6">
+        <div class="col-4">
             <a [routerLink]="['/home']">
                 {{translationConcat('LOGO') | translate}}
             </a>
         </div>
 
-        <div class="col-6 d-flex justify-content-end">
+        <div class="col-4 d-flex justify-content-center">
             <ul>
                 <li>
-                    <a [routerLink]="['/home']">
+                    <a [routerLink]="['/home']" [class]="{'active': router.url === '/'}">
                         {{translationConcat('HOME') | translate}}
                     </a>
                 </li>
                 <li>
-                    <a [routerLink]="['/projects']">
+                    <a [routerLink]="['/projects']" [class]="{'active': router.url === 'projects'}">
                         {{translationConcat('PROJECTS') | translate}}
                     </a>
                 </li>
@@ -23,17 +23,21 @@
                         {{translationConcat('ABOUT') | translate}}
                     </a>
                 </li>
+            </ul>
+
+            <clp-burger-menu [(toggled)]="mobileMenuToggled" />
+        </div>
+        <div class="col-4">
+            <ul>
                 <li>
                     <a role="button" (click)="languageToggle()">
-                        {{translateService.currentLang === 'en' ? '中' : 'En'}}
+                        {{translateService.currentLang === 'en' ? 'Ar' : 'En'}}
                     </a>
                 </li>
                 <li class="d-flex align-items-center">
                     <clp-theme-picker></clp-theme-picker>
                 </li>
             </ul>
-
-            <clp-burger-menu [(toggled)]="mobileMenuToggled" />
         </div>
     </div>
 </nav>

@@ -3,7 +3,7 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { AbstractComponent } from '../../models/abstract-component.base';
 import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
 import { NgClass } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ThemePickerComponent } from "../theme-picker/theme-picker.component";
 
 @Component({
@@ -15,7 +15,7 @@ import { ThemePickerComponent } from "../theme-picker/theme-picker.component";
 export class NavComponent extends AbstractComponent {
   mobileMenuToggled: boolean = false;
 
-  constructor (public translateService: TranslateService) {
+  constructor (public translateService: TranslateService, public router: Router) {
     super({
       translationPrefix: 'NAV'
     });
