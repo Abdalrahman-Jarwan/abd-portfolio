@@ -1,0 +1,65 @@
+<div class="project-filters project-filters-lg">
+    <ul>
+        <li>
+            <a role="button" (click)="filter('all')" [ngClass]="{'selected': selectedFilter === 'all'}">
+                <i class="bi bi-dot"></i>
+                {{translationConcat('ALL') | translate}}
+            </a>
+        </li>
+        <li>
+            <a role="button" (click)="filter(categoryTypes.RESEARCH)" [ngClass]="{'selected': selectedFilter === categoryTypes.RESEARCH}">
+                <i class="bi bi-dot"></i>
+                {{translationConcat('RESEARCH') | translate}}
+            </a>
+        </li>
+        <li>
+            <a role="button" (click)="filter(categoryTypes.REPORTS)" [ngClass]="{'selected': selectedFilter === categoryTypes.REPORTS}">
+                <i class="bi bi-dot"></i>
+                {{translationConcat('REPORT') | translate}}
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="project-filters project-filters-sm">
+    <div ngbDropdown class="d-inline-block">
+        <button type="button" class="btn btn-outline-primary btn-custom" ngbDropdownToggle>
+            <span>
+                <ng-container [ngSwitch]="selectedFilter">
+                    <i class="bi bi-dot"></i>
+                    <ng-container *ngSwitchCase="'all'">
+                        {{translationConcat('ALL') | translate}}
+                    </ng-container>
+                    <ng-container *ngSwitchCase="categoryTypes.RESEARCH">
+                        {{translationConcat('RESEARCH') | translate}}
+                    </ng-container>
+                    <ng-container *ngSwitchCase="categoryTypes.REPORTS">
+                        {{translationConcat('REPORT') | translate}}
+                    </ng-container>
+                </ng-container>
+            </span>
+        </button>
+        <div ngbDropdownMenu>
+            <button ngbDropdownItem (click)="filter('all')" [ngClass]="{'selected': selectedFilter === 'all'}">
+                <i class="bi bi-dot"></i>
+                {{translationConcat('ALL') | translate}}
+            </button>
+            <button ngbDropdownItem (click)="filter(categoryTypes.RESEARCH)">
+                <i class="bi bi-dot"></i>
+                {{translationConcat('RESEARCH') | translate}}
+            </button>
+            <button ngbDropdownItem (click)="filter(categoryTypes.REPORTS)">
+                <i class="bi bi-dot"></i>
+                {{translationConcat('REPORT') | translate}}
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<ng-template #dotTemplate>
+    <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="1.5" cy="1.5" r="1.5" fill="black" />
+    </svg>
+</ng-template>

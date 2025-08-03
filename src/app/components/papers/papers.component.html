@@ -1,0 +1,13 @@
+<div class="row m-0 my-2 my-md-5">
+    <div class="col">
+        <clp-paper-filters [(papers)]="papers"></clp-paper-filters>
+    </div>
+</div>
+
+<div class="row m-0">
+    @for(paper of this.papers; track paper.id){
+    <div class="col-12 my-3">
+        <clp-paper-item [paper]="paper"></clp-paper-item>
+    </div>
+    }
+</div>

@@ -1,0 +1,18 @@
+.badge{
+    background-color: var(--custom-secondary-color);
+    border-radius: 20px;
+    padding: 4px 12px !important;
+    font-weight: 300;
+}
+
+.paper-item-link{
+    color: var(--custom-primary);
+    text-decoration: none;
+    opacity: .7;
+    font-weight: 300;
+    transition: opacity .2s ease-in-out;
+
+    &:hover{
+        opacity: 1;
+    }
+}

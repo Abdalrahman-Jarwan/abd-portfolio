@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "title": {
+            "en": "Lorem Ipsum Dolor Sit Amet 1",
+            "ar": "لوريم إيبسوم دولور سيت أميت 1"
+        },
+        "description": {
+            "en": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem illum vero a, voluptate nostrum, tempora possimus molestias accusamus sunt debitis maxime facilis aspernatur itaque ducimus aperiam? At aliquid repudiandae ipsa?",
+            "ar": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيت إليت، سيد دو إيوسمد تمبور إنسيديد أيوت لابوري إت دولوري ماغنا أليكا. أوت إنيم أد مينيم فينيام، كيوس نوسترود إكسيرسيتايشن أولامكو لابوريس نيسي أوت أليكويب إكس إيا كومودو كونسيكوات. ديواس أوتي إيرور إن ريبرهيندريت إن فولوبتاتي فيليت إيسسي سيليوم دولار أيو فيجايت نيولا باراياتيور."
+        },
+        "papersCategoryTypes": 1,
+        "url": "assets/papers/final_project_draft/final_project_draft.pdf"
+    },
+    {
+        "id": 2,
+        "title": {
+            "en": "Lorem Ipsum Dolor Sit Amet 2",
+            "ar": "2 لوريم إيبسوم دولور سيت أميت"
+        },
+        "description": {
+            "en": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem illum vero a, voluptate nostrum, tempora possimus molestias accusamus sunt debitis maxime facilis aspernatur itaque ducimus aperiam? At aliquid repudiandae ipsa?",
+            "ar": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيت إليت، سيد دو إيوسمد تمبور إنسيديد أيوت لابوري إت دولوري ماغنا أليكا. أوت إنيم أد مينيم فينيام، كيوس نوسترود إكسيرسيتايشن أولامكو لابوريس نيسي أوت أليكويب إكس إيا كومودو كونسيكوات. ديواس أوتي إيرور إن ريبرهيندريت إن فولوبتاتي فيليت إيسسي سيليوم دولار أيو فيجايت نيولا باراياتيور."
+        },
+        "papersCategoryTypes": 2,
+        "url": "assets/papers/final_project_draft/final_project_draft.pdf"
+    },
+    {
+        "id": 3,
+        "title": {
+            "en": "Lorem Ipsum Dolor Sit Amet 3",
+            "ar": "3 لوريم إيبسوم دولور سيت أميت"
+        },
+        "description": {
+            "en": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem illum vero a, voluptate nostrum, tempora possimus molestias accusamus sunt debitis maxime facilis aspernatur itaque ducimus aperiam? At aliquid repudiandae ipsa?",
+            "ar": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيت إليت، سيد دو إيوسمد تمبور إنسيديد أيوت لابوري إت دولوري ماغنا أليكا. أوت إنيم أد مينيم فينيام، كيوس نوسترود إكسيرسيتايشن أولامكو لابوريس نيسي أوت أليكويب إكس إيا كومودو كونسيكوات. ديواس أوتي إيرور إن ريبرهيندريت إن فولوبتاتي فيليت إيسسي سيليوم دولار أيو فيجايت نيولا باراياتيور."
+        },
+        "papersCategoryTypes": 1,
+        "url": "assets/papers/final_project_draft/final_project_draft.pdf"
+    }
+]

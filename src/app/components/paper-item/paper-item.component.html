@@ -1,0 +1,19 @@
+<span class="px-2 py-1 badge">
+    @if(paper?.papersCategoryTypes === paperCategoryTypes.RESEARCH){
+    {{translationConcat('RESEARCH') | translate}}
+    }@else {
+    {{translationConcat('REPORT') | translate}}
+    }
+</span>
+
+<h6 class="my-2">
+    {{paper?.title?.[translateService.currentLang]! | translate}}
+</h6>
+
+<p>
+    {{paper?.description?.[translateService.currentLang]! | translate}}
+</p>
+
+<a role="button" (click)="viewReport()" class="paper-item-link">
+    Paper
+</a>
