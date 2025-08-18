@@ -1,0 +1,30 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.219);
+    display: none;
+    z-index: 9999;
+
+    .content {
+        padding: 1rem;
+        width: fit-content;
+        margin: 0 auto;
+
+        .toolbox {
+            background-color: #374151;
+        }
+
+        pdf-viewer {
+            height: 100vh;
+            width: 500px;
+            cursor: grab;
+        }
+    }
+}
+
+.overlay.overlay-active {
+    display: block;
+}

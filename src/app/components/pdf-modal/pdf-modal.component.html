@@ -1,0 +1,20 @@
+<div [class]="{overlay: true, 'overlay-active': showModal}" (click)="dismiss()">
+    <div class="content" (click)="$event.stopPropagation()">
+        <div class="toolbox d-flex justify-content-center border-rounded" (click)="$event.stopPropagation()">
+            <button class="btn text-light" (click)="zoomIn()">
+                <i class="bi bi-zoom-in"></i>
+            </button>
+            <button class="btn text-light" (click)="zoomOut()">
+                <i class="bi bi-zoom-out"></i>
+            </button>
+            <a class="btn text-light" [href]="pdfUrl" [download]="pdfUrl">
+                <i class="bi bi-cloud-download"></i>
+            </a>
+            <button class="btn text-light" (click)="dismiss()">
+                <i class="bi bi-x-circle-fill"></i>
+            </button>
+        </div>
+        <pdf-viewer appDraggableContent [src]="pdfUrl" [render-text]="true" [zoom]="zoom" zoom-scale="page-fit"
+            [original-size]="true" />
+    </div>
+</div>

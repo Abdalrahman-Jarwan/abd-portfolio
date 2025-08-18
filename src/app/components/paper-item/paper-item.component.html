@@ -17,3 +17,6 @@
 <a role="button" (click)="viewReport()" class="paper-item-link">
     Paper
 </a>
+
+<clp-pdf-modal [(showModal)]="showModal" [pdfUrl]="paper?.url"
+/>
