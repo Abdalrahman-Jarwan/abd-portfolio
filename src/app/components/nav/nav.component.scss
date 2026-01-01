@@ -21,45 +21,13 @@ nav {
     }
 }
 
-.menu {
-    display: block;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bs-body-bg);
-    display: none;
-    padding-top: 100px;
-
-
-    &.toggled {
-        display: block;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-
-        li {
-            margin: 18px 0;
-
-            a {
-                text-decoration: none;
-                color: var(--bs-body-color);
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
 a.active {
     opacity: 1 !important;
     color: var(--bs-light) !important;
+}
+
+.logo{
+    color: var(--custom-primary) !important;
 }
 
 @media (min-width: 992px) {

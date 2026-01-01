@@ -1,5 +1,5 @@
 .img-box {
-  background-color: #374151;
+  background-color: #575757;
   aspect-ratio: 1/1;
   height: 100%;
   width: 100%;
@@ -9,4 +9,91 @@
 // not the first section
 section:not(:first-of-type) {
   margin: 128px 0;
+}
+
+.project-and-papers-section {
+  height: 300px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  .projects-and-papers-link {
+    text-decoration: none;
+    color: var(--bs-body-color);
+    transition: opacity .3s ease-in-out;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1 !important;
+    }
+
+    .bottom-arrow {
+      display: block;
+      text-align: center;
+
+      animation: jump-vertical 1s infinite;
+    }
+  }
+}
+
+section#intro-section {
+
+  hr {
+    color: var(--custom-primary);
+    opacity: 1;
+  }
+
+  .text-content {
+    width: 100%;
+
+    p {
+      max-width: 450px;
+      font-weight: 300;
+    }
+
+    .name-text {
+      .last-name {
+        color: var(--custom-primary);
+      }
+    }
+  }
+
+  .view-resume-button a {
+    text-decoration: none;
+    color: var(--bs-body-color);
+    border: var(--bs-body-color) 1px solid;
+    display: inline;
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: .8;
+    transition: opacity .3s ease-in-out;
+
+    .bi.bi-arrow-right {
+      display: inline-block;
+      transition: transform 450ms ease-in-out;
+      transform: translateX(0) scale(1);
+    }
+
+    &:hover {
+      opacity: 1 !important;
+    }
+
+    &:hover .bi.bi-arrow-right {
+      transform: translateX(3px) scale(1.1);
+    }
+  }
+}
+
+@keyframes jump-vertical {
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-3px) scale(1.2);
+  }
 }
