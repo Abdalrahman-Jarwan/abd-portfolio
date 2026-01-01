@@ -28,11 +28,11 @@
     {
         "id": 3,
         "title": {
-            "en": "Lorem Ipsum Dolor Sit Amet 3",
+            "en": "Q3 Market Analysis 2024",
             "ar": "3 لوريم إيبسوم دولور سيت أميت"
         },
         "description": {
-            "en": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem illum vero a, voluptate nostrum, tempora possimus molestias accusamus sunt debitis maxime facilis aspernatur itaque ducimus aperiam? At aliquid repudiandae ipsa?",
+            "en": "An in-depth analysis of emerging tech markets in the MENA region, focusing on investment trends and regulatory shifts.",
             "ar": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيت إليت، سيد دو إيوسمد تمبور إنسيديد أيوت لابوري إت دولوري ماغنا أليكا. أوت إنيم أد مينيم فينيام، كيوس نوسترود إكسيرسيتايشن أولامكو لابوريس نيسي أوت أليكويب إكس إيا كومودو كونسيكوات. ديواس أوتي إيرور إن ريبرهيندريت إن فولوبتاتي فيليت إيسسي سيليوم دولار أيو فيجايت نيولا باراياتيور."
         },
         "papersCategoryTypes": 1,
