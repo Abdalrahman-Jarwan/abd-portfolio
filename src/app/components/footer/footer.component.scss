@@ -1,8 +1,13 @@
 footer {
 
-    .footer-wrapper{
+    .footer-wrapper {
         border-color: #333333 !important;
+        .row {
+            max-width: 1200px;
+            margin: auto;
+        }
     }
+
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
     height: 112px;
@@ -18,6 +23,10 @@ footer {
         * {
             stroke: var(--bs-body-color) !important;
         }
+    }
+
+    .bi {
+        font-size: 1.2rem;
     }
 }
 
