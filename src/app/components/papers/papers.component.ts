@@ -4,6 +4,7 @@ import { PapersFiltersComponent } from "../papers-filters/papers-filters.compone
 import { PaperItemComponent } from "../paper-item/paper-item.component";
 import { PapersService } from '../../services/paper.service';
 
+type FilterType = "ALL" | "PAPERS" | "PROJECTS";
 @Component({
   selector: 'clp-papers',
   imports: [PapersFiltersComponent, PaperItemComponent],
@@ -12,6 +13,7 @@ import { PapersService } from '../../services/paper.service';
 })
 export class PapersComponent {
   papers: Paper[] = [];
+  activeFilter: FilterType = "ALL";
 
   constructor (public papersService: PapersService) {
   }
@@ -20,5 +22,9 @@ export class PapersComponent {
     this.papersService.getPapers('all').subscribe(papers => {
       this.papers = papers;
     })
+  }
+
+  setActiveFilter (activeFilter: FilterType) {
+    this.activeFilter = activeFilter;
   }
 }

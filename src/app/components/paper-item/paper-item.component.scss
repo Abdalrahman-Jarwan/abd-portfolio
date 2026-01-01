@@ -1,18 +1,51 @@
-.badge{
-    background-color: var(--custom-secondary-color);
+.badge {
+    background-color: var(--custom-secondary-bg);
     border-radius: 20px;
     padding: 4px 12px !important;
     font-weight: 300;
 }
 
-.paper-item-link{
+.text-content{
+    font-size: .9rem;
+    max-width: 700px;
+}
+
+.paper-item-link {
     color: var(--custom-primary);
     text-decoration: none;
-    opacity: .7;
-    font-weight: 300;
+    font-weight: 500;
+    font-size: .9rem;
     transition: opacity .2s ease-in-out;
 
-    &:hover{
+    .bi.bi-arrow-right {
+        display: inline-block;
+        transition: transform 400ms ease-in-out;
+        transform: translateX(0);
+    }
+
+    &:hover .bi.bi-arrow-right {
+        transform: translateX(3px);
+    }
+
+    &:hover {
         opacity: 1;
     }
 }
+
+// .projects-and-papers-link {
+//     text-decoration: none;
+//     color: var(--bs-body-color);
+//     transition: opacity .3s ease-in-out;
+//     opacity: .7;
+
+//     &:hover {
+//       opacity: 1 !important;
+//     }
+
+//     .bottom-arrow {
+//       display: block;
+//       text-align: center;
+
+//       animation: jump-vertical 1s infinite;
+//     }
+//   }

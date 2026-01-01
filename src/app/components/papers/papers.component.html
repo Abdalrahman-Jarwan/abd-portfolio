@@ -1,12 +1,37 @@
-<div class="row m-0 my-2 my-md-5">
+<!-- <div class="row m-0 my-2 my-md-5">
     <div class="col">
         <clp-paper-filters [(papers)]="papers"></clp-paper-filters>
     </div>
+</div> -->
+
+<div class="row pb-5 justify-content-between align-items-center">
+    <div class="ps-0 col-auto">
+        <h1>
+            Selected Works
+        </h1>
+    </div>
+
+    <div class="col-auto d-flex filters-list">
+        <a [class]="['mx-2', activeFilter === 'ALL' ? 'active' : '']" role="button"
+            (click)="setActiveFilter('ALL')">ALL</a>
+        <a [class]="['mx-2', activeFilter === 'PAPERS' ? 'active' : '']" role="button"
+            (click)="setActiveFilter('PAPERS')">PAPERS</a>
+        <a [class]="['mx-2', activeFilter === 'PROJECTS' ? 'active' : '']" role="button"
+            (click)="setActiveFilter('PROJECTS')">PROJECTS</a>
+    </div>
+</div>
+
+<div class="d-flex title-separator align-items-center">
+    <div class="me-3">
+        <small class="text-custom-seconday">PAPERS</small>
+    </div>
+
+    <hr class="w-100">
 </div>
 
 <div class="row m-0">
     @for(paper of this.papers; track paper.id){
-    <div class="col-12 my-3">
+    <div class="col-12 my-3 ps-0">
         <clp-paper-item [paper]="paper"></clp-paper-item>
     </div>
     }

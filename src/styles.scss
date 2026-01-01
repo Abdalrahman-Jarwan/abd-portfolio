@@ -22,6 +22,21 @@ body {
     transition-timing-function: ease-in-out;
 }
 
-.ng2-pdf-viewer-container{
+.ng2-pdf-viewer-container {
     overflow: hidden;
+}
+
+.font-secondary {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.text-custom-seconday {
+    color: var(--custom-secondary-color);
+}
+
+.text-custom-primary {
+    color: var(--custom-primary);
 }

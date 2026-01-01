@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "https://abdalrahman-jarwan.github.io/abd-portfolio/",
             "outputPath": "dist/abd-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",

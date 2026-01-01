@@ -2,3 +2,25 @@
     aspect-ratio: 383px/273px;
     height: 220px;
 }
+
+.filters-list {
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &::after {
+            content: '';
+            display: block;
+            pointer-events: none;
+            border-bottom: rgba(0, 0, 0, 0) 2px solid;
+            width: 0;
+            border-radius: 50px;
+            transition: all  0.3s ease-in-out;
+        }
+
+        &.active::after {
+            width: 100% !important;
+            border-color: var(--bs-body-color) !important;
+        }
+    }
+}

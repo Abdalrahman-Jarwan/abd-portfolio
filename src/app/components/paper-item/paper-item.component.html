@@ -6,17 +6,16 @@
     }
 </span>
 
-<h6 class="my-2">
+<h4 class="my-2 font-secondary">
     {{paper?.title?.[translateService.currentLang]! | translate}}
-</h6>
+</h4>
 
-<p>
+<p class="text-custom-seconday text-content">
     {{paper?.description?.[translateService.currentLang]! | translate}}
 </p>
 
 <a role="button" (click)="viewReport()" class="paper-item-link">
-    Paper
+    Paper <i class="bi bi-arrow-right"></i>
 </a>
 
-<clp-pdf-modal [(showModal)]="showModal" [pdfUrl]="paper?.url"
-/>
+<clp-pdf-modal [(showModal)]="showModal" [pdfUrl]="paper?.url" />
