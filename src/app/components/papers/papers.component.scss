@@ -15,12 +15,26 @@
             border-bottom: rgba(0, 0, 0, 0) 2px solid;
             width: 0;
             border-radius: 50px;
-            transition: all  0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
         }
 
         &.active::after {
             width: 100% !important;
             border-color: var(--bs-body-color) !important;
         }
+    }
+}
+
+.img-box {
+    background-color: #575757;
+    aspect-ratio: 424/280;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.text-content{
+    p{
+        max-width: 550px;
     }
 }

@@ -40,3 +40,16 @@ body {
 .text-custom-primary {
     color: var(--custom-primary);
 }
+
+body *{
+    animation: fadeInAnimation ease-in-out .8s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

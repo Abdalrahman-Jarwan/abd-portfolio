@@ -1,9 +1,3 @@
-<!-- <div class="row m-0 my-2 my-md-5">
-    <div class="col">
-        <clp-paper-filters [(papers)]="papers"></clp-paper-filters>
-    </div>
-</div> -->
-
 <div class="row pb-5 justify-content-between align-items-center">
     <div class="ps-0 col-auto">
         <h1>
@@ -20,8 +14,8 @@
             (click)="setActiveFilter('PROJECTS')">PROJECTS</a>
     </div>
 </div>
-
-<div class="d-flex title-separator align-items-center">
+@if(activeFilter === 'ALL' || activeFilter === 'PAPERS'){
+<div class="d-flex title-separator align-items-center mb-5">
     <div class="me-3">
         <small class="text-custom-seconday">PAPERS</small>
     </div>
@@ -36,3 +30,58 @@
     </div>
     }
 </div>
+}
+
+@if(activeFilter === 'ALL' || activeFilter === 'PROJECTS'){
+<div class="d-flex title-separator align-items-center mb-5">
+    <div class="me-3">
+        <small class="text-custom-seconday">PROJECTS</small>
+    </div>
+
+    <hr class="w-100">
+</div>
+
+<div class="row mb-5">
+    <div class="col-4">
+        <div class="img-box"> </div>
+    </div>
+
+    <div class="col-8 d-flex flex-column">
+        <div class="text-content">
+            <small class="text-custom-seconday d-block mb-4">2024 - UI/UX, REACT</small>
+            <h1 class="text-left name-text text-custom-primary font-secondary">
+                FinTech Dashboard Redesign
+            </h1>
+            <p class="py-4 text-custom-seconday">
+                A comprehensive overhaul of a financial analytics
+                platform. We improved data visualization using D3.js
+                and streamlined the user flow, resulting in a 40%
+                increase in user retention over three months. The
+                interface focuses on clarity and speed.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-4">
+        <div class="img-box"> </div>
+    </div>
+
+    <div class="col-8 d-flex flex-column">
+        <div class="text-content">
+            <small class="text-custom-seconday d-block mb-4">2023 — DESIGN, SWIFT</small>
+            <h1 class="text-left name-text text-custom-primary font-secondary">
+                E-commerce Mobile App
+            </h1>
+            <p class="py-4 text-custom-seconday">
+                Designed and developed a native iOS application for a
+                luxury fashion retailer. Focused on creating a seamless
+                shopping experience with features like AR try-on and
+                personalized recommendations, boosting mobile
+                conversion rates by 25%.
+            </p>
+        </div>
+    </div>
+</div>
+}
